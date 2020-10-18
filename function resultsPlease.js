@@ -1,3 +1,5 @@
+import{question, questions, qBox, resultsContainer, answers};
+
 function resultsPlease(questions, qBox, resultsContainer) {
 
     // laver en holder til valuesne fra quizzens svar
@@ -31,3 +33,5 @@ function resultsPlease(questions, qBox, resultsContainer) {
     // her beder vi den om at den skal skrive i html, og den skal fortælle hvor mange rigtige svar man har fået ud af alle de mulige svar.
     resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
 }
+
+export{resultsPlease, answerContainers, userAnswer, numCorrect, resultsContainer};

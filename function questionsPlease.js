@@ -1,3 +1,5 @@
+import{questions, qbox, answers, question, output};
+
 function questionsPlease(questions, qBox){
     // Her bliver svarene og output deklareret så de kan indeholde ja svar og output
     let output = [];
@@ -29,3 +31,5 @@ function questionsPlease(questions, qBox){
     // så nu kombinerer man outputlisterne og skriver dem ud i htmlen
     qBox.innerHTML = output.join('');
 }
+
+export{questionsPlease, output, answers};
